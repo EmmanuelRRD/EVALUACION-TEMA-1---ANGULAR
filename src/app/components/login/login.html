@@ -1,0 +1,51 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+
+  <div class="w-full max-w-sm bg-white rounded-xl shadow-lg p-8">
+
+    <h2 class="text-3xl font-bold text-center mb-6">
+      Login
+    </h2>
+
+    <form (ngSubmit)="login()" class="space-y-5">
+
+      <div>
+        <label class="text-sm text-gray-600">Usuario</label>
+
+        <input
+          type="text"
+          name="username"
+          [(ngModel)]="username"
+          placeholder="Ingresa tu usuario"
+          class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+      </div>
+
+      <div>
+        <label class="text-sm text-gray-600">Contraseña</label>
+
+        <input
+          type="password"
+          name="password"
+          [(ngModel)]="password"
+          placeholder="Ingresa tu contraseña"
+          class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+      >
+        Iniciar sesión
+      </button>
+
+    </form>
+
+    <p class="text-sm text-center mt-4 text-gray-500">
+      ¿No tienes cuenta?
+      <a class="text-blue-600 hover:underline">Crear cuenta</a>
+    </p>
+
+  </div>
+
+</div>
